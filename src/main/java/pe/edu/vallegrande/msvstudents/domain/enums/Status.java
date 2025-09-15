@@ -1,8 +1,11 @@
 package pe.edu.vallegrande.msvstudents.domain.enums;
 
 public enum Status {
-    ACTIVE("A"),
-    INACTIVE("I");
+    ACTIVE("ACTIVE"),
+    INACTIVE("INACTIVE"),
+    TRANSFERRED("TRANSFERRED"),
+    GRADUATED("GRADUATED"),
+    DECEASED("DECEASED");
 
     private final String value;
 

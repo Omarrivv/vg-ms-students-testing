@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>StudentEnrollmentController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">vg-ms-students</a> &gt; <a href="index.source.html" class="el_package">pe.edu.vallegrande.msvstudents.infrastructure.rest</a> &gt; <span class="el_source">StudentEnrollmentController.java</span></div><h1>StudentEnrollmentController.java</h1><pre class="source lang-java linenums">package pe.edu.vallegrande.msvstudents.infrastructure.rest;
+
+import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.*;
+import pe.edu.vallegrande.msvstudents.application.service.StudentEnrollmentService;
+import pe.edu.vallegrande.msvstudents.infrastructure.dto.request.CreateStudentEnrollmentRequest;
+import pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse;
+import pe.edu.vallegrande.msvstudents.infrastructure.dto.response.StudentEnrollmentResponse;
+import reactor.core.publisher.Mono;
+
+import jakarta.validation.Valid;
+import java.util.List;
+
+@RestController
+@RequestMapping(&quot;/api/v1/enrollments&quot;)
+<span class="nc" id="L16">@RequiredArgsConstructor</span>
+public class StudentEnrollmentController {
+
+    private final StudentEnrollmentService enrollmentService;
+
+    @GetMapping
+    public Mono&lt;ApiResponse&lt;List&lt;StudentEnrollmentResponse&gt;&gt;&gt; findAll() {
+<span class="nc" id="L23">        return enrollmentService.findAllOrderedByCreatedAt()</span>
+<span class="nc" id="L24">                .collectList()</span>
+<span class="nc" id="L25">                .map(enrollments -&gt; ApiResponse.success(enrollments, &quot;Student enrollments retrieved successfully&quot;));</span>
+    }
+
+    @GetMapping(&quot;/{id}&quot;)
+    public Mono&lt;ApiResponse&lt;StudentEnrollmentResponse&gt;&gt; findById(@PathVariable String id) {
+<span class="nc" id="L30">        return enrollmentService.findById(id)</span>
+<span class="nc" id="L31">                .map(enrollment -&gt; ApiResponse.success(enrollment, &quot;Student enrollment retrieved successfully&quot;));</span>
+    }
+
+    @PostMapping
+    public Mono&lt;ApiResponse&lt;StudentEnrollmentResponse&gt;&gt; save(@Valid @RequestBody CreateStudentEnrollmentRequest request) {
+<span class="nc" id="L36">        return enrollmentService.save(request)</span>
+<span class="nc" id="L37">                .map(enrollment -&gt; ApiResponse.success(enrollment, &quot;Student enrollment created successfully&quot;, 201));</span>
+    }
+
+    @PutMapping(&quot;/{id}/status/{status}&quot;)
+    public Mono&lt;ApiResponse&lt;StudentEnrollmentResponse&gt;&gt; updateStatus(@PathVariable String id, 
+                                                                     @PathVariable String status) {
+<span class="nc" id="L43">        return enrollmentService.updateStatus(id, status)</span>
+<span class="nc" id="L44">                .map(enrollment -&gt; ApiResponse.success(enrollment, &quot;Student enrollment status updated successfully&quot;));</span>
+    }
+
+    @DeleteMapping(&quot;/{id}&quot;)
+    public Mono&lt;ApiResponse&lt;Void&gt;&gt; delete(@PathVariable String id) {
+<span class="nc" id="L49">        return enrollmentService.delete(id)</span>
+<span class="nc" id="L50">                .then(Mono.just(ApiResponse.success(null, &quot;Student enrollment deactivated successfully&quot;, 204)));</span>
+    }
+
+    @PutMapping(&quot;/{id}/restore&quot;)
+    public Mono&lt;ApiResponse&lt;StudentEnrollmentResponse&gt;&gt; restore(@PathVariable String id) {
+<span class="nc" id="L55">        return enrollmentService.restore(id)</span>
+<span class="nc" id="L56">                .map(enrollment -&gt; ApiResponse.success(enrollment, &quot;Student enrollment restored successfully&quot;));</span>
+    }
+
+    @GetMapping(&quot;/student/{studentId}&quot;)
+    public Mono&lt;ApiResponse&lt;List&lt;StudentEnrollmentResponse&gt;&gt;&gt; findByStudentId(@PathVariable String studentId) {
+<span class="nc" id="L61">        return enrollmentService.findByStudentIdOrderedByCreatedAt(studentId)</span>
+<span class="nc" id="L62">                .collectList()</span>
+<span class="nc" id="L63">                .map(enrollments -&gt; ApiResponse.success(enrollments, &quot;Student enrollments retrieved by student ID successfully&quot;));</span>
+    }
+
+    @GetMapping(&quot;/classroom/{classroomId}&quot;)
+    public Mono&lt;ApiResponse&lt;List&lt;StudentEnrollmentResponse&gt;&gt;&gt; findByClassroomId(@PathVariable String classroomId) {
+<span class="nc" id="L68">        return enrollmentService.findByClassroomId(classroomId)</span>
+<span class="nc" id="L69">                .collectList()</span>
+<span class="nc" id="L70">                .map(enrollments -&gt; ApiResponse.success(enrollments, &quot;Student enrollments retrieved by classroom ID successfully&quot;));</span>
+    }
+
+    @GetMapping(&quot;/enrollment-number/{enrollmentNumber}&quot;)
+    public Mono&lt;ApiResponse&lt;StudentEnrollmentResponse&gt;&gt; findByEnrollmentNumber(@PathVariable String enrollmentNumber) {
+<span class="nc" id="L75">        return enrollmentService.findByEnrollmentNumber(enrollmentNumber)</span>
+<span class="nc" id="L76">                .map(enrollment -&gt; ApiResponse.success(enrollment, &quot;Student enrollment retrieved by enrollment number successfully&quot;));</span>
+    }
+
+    @GetMapping(&quot;/status/{status}&quot;)
+    public Mono&lt;ApiResponse&lt;List&lt;StudentEnrollmentResponse&gt;&gt;&gt; findByStatus(@PathVariable String status) {
+<span class="nc" id="L81">        return enrollmentService.findByStatus(status)</span>
+<span class="nc" id="L82">                .collectList()</span>
+<span class="nc" id="L83">                .map(enrollments -&gt; ApiResponse.success(enrollments, &quot;Student enrollments retrieved by status successfully&quot;));</span>
+    }
+
+    @PostMapping(&quot;/bulk&quot;)
+    public Mono&lt;ApiResponse&lt;List&lt;StudentEnrollmentResponse&gt;&gt;&gt; saveBulk(@Valid @RequestBody List&lt;CreateStudentEnrollmentRequest&gt; requests) {
+<span class="nc" id="L88">        return enrollmentService.saveBulk(requests)</span>
+<span class="nc" id="L89">                .collectList()</span>
+<span class="nc" id="L90">                .map(enrollments -&gt; ApiResponse.success(enrollments, &quot;Student enrollments created successfully in bulk&quot;, 201));</span>
+    }
+
+    @GetMapping(&quot;/analytics/classroom/{classroomId}/stats&quot;)
+    public Mono&lt;ApiResponse&lt;Object&gt;&gt; getClassroomStats(@PathVariable String classroomId) {
+<span class="nc" id="L95">        return enrollmentService.getClassroomStats(classroomId)</span>
+<span class="nc" id="L96">                .map(stats -&gt; ApiResponse.success(stats, &quot;Classroom statistics retrieved successfully&quot;));</span>
+    }
+
+    @GetMapping(&quot;/analytics/enrollment-distribution&quot;)
+    public Mono&lt;ApiResponse&lt;Object&gt;&gt; getEnrollmentDistribution() {
+<span class="nc" id="L101">        return enrollmentService.getEnrollmentDistribution()</span>
+<span class="nc" id="L102">                .map(distribution -&gt; ApiResponse.success(distribution, &quot;Enrollment distribution retrieved successfully&quot;));</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

@@ -1,0 +1,28 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/test_students_db
+  
+  profiles:
+    active: test
+
+logging:
+  level:
+    pe.edu.vallegrande.msvstudents: DEBUG
+    org.springframework.data.mongodb: DEBUG
+    reactor.netty: INFO
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+
+# Configuración específica para pruebas
+test:
+  mongodb:
+    cleanup: true
+    timeout: 5000

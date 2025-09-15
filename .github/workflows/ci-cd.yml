@@ -1,0 +1,162 @@
+name: CI/CD Pipeline - Microservicio Estudiantes
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  test:
+    name: Pruebas Unitarias y Cobertura
+    runs-on: ubuntu-latest
+    
+    services:
+      mongodb:
+        image: mongo:6.0
+        ports:
+          - 27017:27017
+        options: >-
+          --health-cmd "mongosh --eval 'db.adminCommand(\"ping\")'"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+    - name: Checkout código
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Necesario para SonarQube
+
+    - name: Configurar JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Cache dependencias Maven
+      uses: actions/cache@v3
+      with:
+        path: ~/.m2
+        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+        restore-keys: ${{ runner.os }}-m2
+
+    - name: Ejecutar pruebas unitarias
+      run: mvn clean test
+      env:
+        SPRING_DATA_MONGODB_URI: mongodb://localhost:27017/test_students_db
+
+    - name: Ejecutar pruebas parametrizadas
+      run: mvn test -Dtest="**/*ParameterizedTest"
+      env:
+        SPRING_DATA_MONGODB_URI: mongodb://localhost:27017/test_students_db
+
+    - name: Generar reporte de cobertura JaCoCo
+      run: mvn jacoco:report
+
+    - name: Verificar cobertura mínima
+      run: mvn jacoco:check
+
+    - name: Subir reportes de cobertura a Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./target/site/jacoco/jacoco.xml
+        flags: unittests
+        name: codecov-umbrella
+
+    - name: Análisis con SonarQube
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      run: |
+        mvn sonar:sonar \
+          -Dsonar.projectKey=vg-ms-students \
+          -Dsonar.organization=vallegrande \
+          -Dsonar.host.url=https://sonarcloud.io \
+          -Dsonar.token=${{ secrets.SONAR_TOKEN }}
+
+    - name: Publicar resultados de pruebas
+      uses: dorny/test-reporter@v1
+      if: success() || failure()
+      with:
+        name: Resultados Pruebas Maven
+        path: target/surefire-reports/*.xml
+        reporter: java-junit
+
+    - name: Archivar reportes de cobertura
+      uses: actions/upload-artifact@v3
+      with:
+        name: jacoco-report
+        path: target/site/jacoco/
+
+    - name: Archivar reportes de pruebas
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-reports
+        path: target/surefire-reports/
+
+  build:
+    name: Construcción y Empaquetado
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+    - name: Checkout código
+      uses: actions/checkout@v4
+
+    - name: Configurar JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Cache dependencias Maven
+      uses: actions/cache@v3
+      with:
+        path: ~/.m2
+        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+        restore-keys: ${{ runner.os }}-m2
+
+    - name: Compilar aplicación
+      run: mvn clean compile
+
+    - name: Empaquetar aplicación
+      run: mvn package -DskipTests
+
+    - name: Construir imagen Docker
+      run: |
+        docker build -t vg-ms-students:${{ github.sha }} .
+        docker tag vg-ms-students:${{ github.sha }} vg-ms-students:latest
+
+    - name: Archivar JAR
+      uses: actions/upload-artifact@v3
+      with:
+        name: jar-artifact
+        path: target/*.jar
+
+  quality-gate:
+    name: Quality Gate
+    needs: [test, build]
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+    - name: Verificar estado de pruebas
+      if: needs.test.result != 'success'
+      run: |
+        echo "❌ Las pruebas fallaron"
+        exit 1
+
+    - name: Verificar estado de construcción
+      if: needs.build.result != 'success' && github.ref == 'refs/heads/main'
+      run: |
+        echo "❌ La construcción falló"
+        exit 1
+
+    - name: Quality Gate exitoso
+      run: |
+        echo "✅ Quality Gate aprobado"
+        echo "✅ Todas las pruebas pasaron"
+        echo "✅ Cobertura de código verificada"
+        echo "✅ Análisis de calidad completado"

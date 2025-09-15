@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: pe.edu.vallegrande.msvstudents.application.service.StudentServiceTest
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.209 s -- in pe.edu.vallegrande.msvstudents.application.service.StudentServiceTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 s -- in pe.edu.vallegrande.msvstudents.application.service.StudentServiceTest

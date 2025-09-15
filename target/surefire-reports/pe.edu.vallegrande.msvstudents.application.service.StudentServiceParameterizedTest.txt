@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: pe.edu.vallegrande.msvstudents.application.service.StudentServiceParameterizedTest
 -------------------------------------------------------------------------------
-Tests run: 30, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 4.722 s <<< FAILURE! -- in pe.edu.vallegrande.msvstudents.application.service.StudentServiceParameterizedTest
-pe.edu.vallegrande.msvstudents.application.service.StudentServiceParameterizedTest.shouldCalculateAgesCorrectly(LocalDate, int, int)[1] -- Time elapsed: 3.795 s <<< FAILURE!
+Tests run: 30, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 5.072 s <<< FAILURE! -- in pe.edu.vallegrande.msvstudents.application.service.StudentServiceParameterizedTest
+pe.edu.vallegrande.msvstudents.application.service.StudentServiceParameterizedTest.shouldCalculateAgesCorrectly(LocalDate, int, int)[1] -- Time elapsed: 4.114 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Edad calculada 15 debe estar entre 13 y 14 ==> expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -155,7 +155,7 @@ org.opentest4j.AssertionFailedError: Edad calculada 15 debe estar entre 13 y 14 
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-pe.edu.vallegrande.msvstudents.application.service.StudentServiceParameterizedTest.shouldCalculateAgesCorrectly(LocalDate, int, int)[2] -- Time elapsed: 0.011 s <<< FAILURE!
+pe.edu.vallegrande.msvstudents.application.service.StudentServiceParameterizedTest.shouldCalculateAgesCorrectly(LocalDate, int, int)[2] -- Time elapsed: 0.008 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Edad calculada 17 debe estar entre 15 y 16 ==> expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -308,7 +308,7 @@ org.opentest4j.AssertionFailedError: Edad calculada 17 debe estar entre 15 y 16 
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-pe.edu.vallegrande.msvstudents.application.service.StudentServiceParameterizedTest.shouldCalculateAgesCorrectly(LocalDate, int, int)[4] -- Time elapsed: 0.010 s <<< FAILURE!
+pe.edu.vallegrande.msvstudents.application.service.StudentServiceParameterizedTest.shouldCalculateAgesCorrectly(LocalDate, int, int)[4] -- Time elapsed: 0.008 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Edad calculada 16 debe estar entre 14 y 15 ==> expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -461,7 +461,7 @@ org.opentest4j.AssertionFailedError: Edad calculada 16 debe estar entre 14 y 15 
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-pe.edu.vallegrande.msvstudents.application.service.StudentServiceParameterizedTest.shouldCalculateAgesCorrectly(LocalDate, int, int)[5] -- Time elapsed: 0.010 s <<< FAILURE!
+pe.edu.vallegrande.msvstudents.application.service.StudentServiceParameterizedTest.shouldCalculateAgesCorrectly(LocalDate, int, int)[5] -- Time elapsed: 0.006 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Edad calculada 14 debe estar entre 12 y 13 ==> expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)

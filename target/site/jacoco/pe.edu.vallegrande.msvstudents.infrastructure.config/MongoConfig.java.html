@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MongoConfig.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">vg-ms-students</a> &gt; <a href="index.source.html" class="el_package">pe.edu.vallegrande.msvstudents.infrastructure.config</a> &gt; <span class="el_source">MongoConfig.java</span></div><h1>MongoConfig.java</h1><pre class="source lang-java linenums">package pe.edu.vallegrande.msvstudents.infrastructure.config;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.mongodb.core.ReactiveMongoTemplate;
+import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRepositories;
+
+import pe.edu.vallegrande.msvstudents.domain.model.Student;
+import pe.edu.vallegrande.msvstudents.domain.model.StudentEnrollment;
+import pe.edu.vallegrande.msvstudents.domain.enums.DocumentType;
+import pe.edu.vallegrande.msvstudents.domain.enums.Gender;
+import pe.edu.vallegrande.msvstudents.domain.enums.Status;
+import pe.edu.vallegrande.msvstudents.domain.enums.GuardianRelationship;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.UUID;
+import reactor.core.publisher.Mono;
+import org.springframework.data.mongodb.core.query.Query;
+
+@Configuration
+@EnableReactiveMongoRepositories(basePackages = &quot;pe.edu.vallegrande.msvstudents.infrastructure.repository&quot;)
+<span class="nc" id="L24">public class MongoConfig {</span>
+
+    @Bean
+    public CommandLineRunner initData(ReactiveMongoTemplate mongoTemplate) {
+<span class="nc" id="L28">        return args -&gt; {</span>
+            // Solo insertar datos de ejemplo si las colecciones están vacías
+<span class="nc" id="L30">            mongoTemplate.count(new Query(), Student.class)</span>
+<span class="nc" id="L31">                .flatMap(count -&gt; {</span>
+<span class="nc bnc" id="L32" title="All 2 branches missed.">                    if (count == 0) {</span>
+<span class="nc" id="L33">                        LocalDateTime now = LocalDateTime.now();</span>
+                        
+                        // Crear estudiantes con nueva estructura
+<span class="nc" id="L36">                        Student student1 = new Student();</span>
+<span class="nc" id="L37">                        student1.setId(UUID.randomUUID().toString());</span>
+<span class="nc" id="L38">                        student1.setFirstName(&quot;Juan Carlos&quot;);</span>
+<span class="nc" id="L39">                        student1.setLastName(&quot;González Pérez&quot;);</span>
+<span class="nc" id="L40">                        student1.setDocumentType(DocumentType.DNI);</span>
+<span class="nc" id="L41">                        student1.setDocumentNumber(&quot;78901234&quot;);</span>
+<span class="nc" id="L42">                        student1.setGender(Gender.MALE);</span>
+<span class="nc" id="L43">                        student1.setBirthDate(LocalDate.of(2015, 3, 15));</span>
+<span class="nc" id="L44">                        student1.setAddress(&quot;Jr. Los Pinos 123&quot;);</span>
+<span class="nc" id="L45">                        student1.setDistrict(&quot;Lima&quot;);</span>
+<span class="nc" id="L46">                        student1.setProvince(&quot;Lima&quot;);</span>
+<span class="nc" id="L47">                        student1.setDepartment(&quot;Lima&quot;);</span>
+<span class="nc" id="L48">                        student1.setPhone(&quot;912345678&quot;);</span>
+<span class="nc" id="L49">                        student1.setEmail(&quot;juangonzalez@mail.com&quot;);</span>
+<span class="nc" id="L50">                        student1.setGuardianName(&quot;Carlos&quot;);</span>
+<span class="nc" id="L51">                        student1.setGuardianLastName(&quot;González&quot;);</span>
+<span class="nc" id="L52">                        student1.setGuardianDocumentType(DocumentType.DNI);</span>
+<span class="nc" id="L53">                        student1.setGuardianDocumentNumber(&quot;12345678&quot;);</span>
+<span class="nc" id="L54">                        student1.setGuardianPhone(&quot;987654321&quot;);</span>
+<span class="nc" id="L55">                        student1.setGuardianEmail(&quot;carlos.gonzalez@mail.com&quot;);</span>
+<span class="nc" id="L56">                        student1.setGuardianRelationship(GuardianRelationship.FATHER.getValue());</span>
+<span class="nc" id="L57">                        student1.setStatus(Status.ACTIVE);</span>
+<span class="nc" id="L58">                        student1.setCreatedAt(now);</span>
+<span class="nc" id="L59">                        student1.setUpdatedAt(now);</span>
+
+<span class="nc" id="L61">                        Student student2 = new Student();</span>
+<span class="nc" id="L62">                        student2.setId(UUID.randomUUID().toString());</span>
+<span class="nc" id="L63">                        student2.setFirstName(&quot;María Lucía&quot;);</span>
+<span class="nc" id="L64">                        student2.setLastName(&quot;Martínez López&quot;);</span>
+<span class="nc" id="L65">                        student2.setDocumentType(DocumentType.DNI);</span>
+<span class="nc" id="L66">                        student2.setDocumentNumber(&quot;78901235&quot;);</span>
+<span class="nc" id="L67">                        student2.setGender(Gender.FEMALE);</span>
+<span class="nc" id="L68">                        student2.setBirthDate(LocalDate.of(2014, 5, 20));</span>
+<span class="nc" id="L69">                        student2.setAddress(&quot;Av. Los Jardines 456&quot;);</span>
+<span class="nc" id="L70">                        student2.setDistrict(&quot;Miraflores&quot;);</span>
+<span class="nc" id="L71">                        student2.setProvince(&quot;Lima&quot;);</span>
+<span class="nc" id="L72">                        student2.setDepartment(&quot;Lima&quot;);</span>
+<span class="nc" id="L73">                        student2.setPhone(&quot;912345679&quot;);</span>
+<span class="nc" id="L74">                        student2.setEmail(&quot;marialucia@mail.com&quot;);</span>
+<span class="nc" id="L75">                        student2.setGuardianName(&quot;Rosa&quot;);</span>
+<span class="nc" id="L76">                        student2.setGuardianLastName(&quot;López&quot;);</span>
+<span class="nc" id="L77">                        student2.setGuardianDocumentType(DocumentType.DNI);</span>
+<span class="nc" id="L78">                        student2.setGuardianDocumentNumber(&quot;23456789&quot;);</span>
+<span class="nc" id="L79">                        student2.setGuardianPhone(&quot;987654322&quot;);</span>
+<span class="nc" id="L80">                        student2.setGuardianEmail(&quot;rosa.lopez@mail.com&quot;);</span>
+<span class="nc" id="L81">                        student2.setGuardianRelationship(GuardianRelationship.MOTHER.getValue());</span>
+<span class="nc" id="L82">                        student2.setStatus(Status.ACTIVE);</span>
+<span class="nc" id="L83">                        student2.setCreatedAt(now);</span>
+<span class="nc" id="L84">                        student2.setUpdatedAt(now);</span>
+
+<span class="nc" id="L86">                        Student student3 = new Student();</span>
+<span class="nc" id="L87">                        student3.setId(UUID.randomUUID().toString());</span>
+<span class="nc" id="L88">                        student3.setFirstName(&quot;Pablo Andrés&quot;);</span>
+<span class="nc" id="L89">                        student3.setLastName(&quot;Torres Vega&quot;);</span>
+<span class="nc" id="L90">                        student3.setDocumentType(DocumentType.DNI);</span>
+<span class="nc" id="L91">                        student3.setDocumentNumber(&quot;78901236&quot;);</span>
+<span class="nc" id="L92">                        student3.setGender(Gender.MALE);</span>
+<span class="nc" id="L93">                        student3.setBirthDate(LocalDate.of(2015, 7, 10));</span>
+<span class="nc" id="L94">                        student3.setAddress(&quot;Calle Los Olivos 789&quot;);</span>
+<span class="nc" id="L95">                        student3.setDistrict(&quot;San Borja&quot;);</span>
+<span class="nc" id="L96">                        student3.setProvince(&quot;Lima&quot;);</span>
+<span class="nc" id="L97">                        student3.setDepartment(&quot;Lima&quot;);</span>
+<span class="nc" id="L98">                        student3.setPhone(&quot;912345680&quot;);</span>
+<span class="nc" id="L99">                        student3.setEmail(&quot;pablotorres@mail.com&quot;);</span>
+<span class="nc" id="L100">                        student3.setGuardianName(&quot;Elena&quot;);</span>
+<span class="nc" id="L101">                        student3.setGuardianLastName(&quot;Vega&quot;);</span>
+<span class="nc" id="L102">                        student3.setGuardianDocumentType(DocumentType.DNI);</span>
+<span class="nc" id="L103">                        student3.setGuardianDocumentNumber(&quot;34567890&quot;);</span>
+<span class="nc" id="L104">                        student3.setGuardianPhone(&quot;987654323&quot;);</span>
+<span class="nc" id="L105">                        student3.setGuardianEmail(&quot;elena.vega@mail.com&quot;);</span>
+<span class="nc" id="L106">                        student3.setGuardianRelationship(GuardianRelationship.GUARDIAN.getValue());</span>
+<span class="nc" id="L107">                        student3.setStatus(Status.ACTIVE);</span>
+<span class="nc" id="L108">                        student3.setCreatedAt(now);</span>
+<span class="nc" id="L109">                        student3.setUpdatedAt(now);</span>
+
+<span class="nc" id="L111">                        return mongoTemplate.insertAll(List.of(student1, student2, student3))</span>
+<span class="nc" id="L112">                            .collectList()</span>
+<span class="nc" id="L113">                            .flatMapMany(students -&gt; {</span>
+                                // Crear matrículas con nueva estructura
+<span class="nc" id="L115">                                StudentEnrollment enrollment1 = new StudentEnrollment();</span>
+<span class="nc" id="L116">                                enrollment1.setId(UUID.randomUUID().toString());</span>
+<span class="nc" id="L117">                                enrollment1.setStudentId(students.get(0).getId());</span>
+<span class="nc" id="L118">                                enrollment1.setClassroomId(&quot;classroom-2024-001&quot;);</span>
+<span class="nc" id="L119">                                enrollment1.setEnrollmentNumber(&quot;ENR-2024-001&quot;);</span>
+<span class="nc" id="L120">                                enrollment1.setEnrollmentDate(LocalDate.of(2024, 3, 1));</span>
+<span class="nc" id="L121">                                enrollment1.setStatus(&quot;ACTIVE&quot;);</span>
+<span class="nc" id="L122">                                enrollment1.setCreatedAt(now);</span>
+<span class="nc" id="L123">                                enrollment1.setUpdatedAt(now);</span>
+
+<span class="nc" id="L125">                                StudentEnrollment enrollment2 = new StudentEnrollment();</span>
+<span class="nc" id="L126">                                enrollment2.setId(UUID.randomUUID().toString());</span>
+<span class="nc" id="L127">                                enrollment2.setStudentId(students.get(1).getId());</span>
+<span class="nc" id="L128">                                enrollment2.setClassroomId(&quot;classroom-2024-001&quot;);</span>
+<span class="nc" id="L129">                                enrollment2.setEnrollmentNumber(&quot;ENR-2024-002&quot;);</span>
+<span class="nc" id="L130">                                enrollment2.setEnrollmentDate(LocalDate.of(2024, 3, 1));</span>
+<span class="nc" id="L131">                                enrollment2.setStatus(&quot;ACTIVE&quot;);</span>
+<span class="nc" id="L132">                                enrollment2.setCreatedAt(now);</span>
+<span class="nc" id="L133">                                enrollment2.setUpdatedAt(now);</span>
+
+<span class="nc" id="L135">                                StudentEnrollment enrollment3 = new StudentEnrollment();</span>
+<span class="nc" id="L136">                                enrollment3.setId(UUID.randomUUID().toString());</span>
+<span class="nc" id="L137">                                enrollment3.setStudentId(students.get(2).getId());</span>
+<span class="nc" id="L138">                                enrollment3.setClassroomId(&quot;classroom-2024-002&quot;);</span>
+<span class="nc" id="L139">                                enrollment3.setEnrollmentNumber(&quot;ENR-2024-003&quot;);</span>
+<span class="nc" id="L140">                                enrollment3.setEnrollmentDate(LocalDate.of(2024, 3, 15));</span>
+<span class="nc" id="L141">                                enrollment3.setStatus(&quot;ACTIVE&quot;);</span>
+<span class="nc" id="L142">                                enrollment3.setCreatedAt(now);</span>
+<span class="nc" id="L143">                                enrollment3.setUpdatedAt(now);</span>
+
+<span class="nc" id="L145">                                return mongoTemplate.insertAll(List.of(enrollment1, enrollment2, enrollment3));</span>
+                            })
+<span class="nc" id="L147">                            .then();</span>
+                    } else {
+<span class="nc" id="L149">                        return Mono.empty();</span>
+                    }
+                })
+<span class="nc" id="L152">                .block();</span>
+<span class="nc" id="L153">        };</span>
+    }
+} 
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

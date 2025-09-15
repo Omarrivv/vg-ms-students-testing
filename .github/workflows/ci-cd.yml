@@ -2,9 +2,9 @@ name: CI/CD Pipeline - Microservicio Estudiantes
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main, vg-ms-students ]
   pull_request:
-    branches: [ main, develop ]
+    branches: [ main, vg-ms-students ]
 
 jobs:
   test:

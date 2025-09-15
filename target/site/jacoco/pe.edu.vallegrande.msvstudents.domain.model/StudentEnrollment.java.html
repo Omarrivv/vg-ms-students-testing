@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>StudentEnrollment.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">vg-ms-students</a> &gt; <a href="index.source.html" class="el_package">pe.edu.vallegrande.msvstudents.domain.model</a> &gt; <span class="el_source">StudentEnrollment.java</span></div><h1>StudentEnrollment.java</h1><pre class="source lang-java linenums">package pe.edu.vallegrande.msvstudents.domain.model;
+
+import lombok.Data;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.index.Indexed;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+<span class="nc bnc" id="L11" title="All 70 branches missed.">@Data</span>
+@Document(collection = &quot;student_enrollments&quot;)
+public class StudentEnrollment {
+    @Id
+<span class="nc" id="L15">    private String id;</span>
+    
+    @Indexed
+<span class="nc" id="L18">    private String studentId; // referencia a Student</span>
+    
+    @Indexed
+<span class="nc" id="L21">    private String classroomId; // referencia a Classroom - contiene Period implícito</span>
+    
+    @Indexed(unique = true)
+<span class="nc" id="L24">    private String enrollmentNumber; // código único de matrícula por período</span>
+    
+<span class="nc" id="L26">    private LocalDate enrollmentDate;</span>
+<span class="nc" id="L27">    private String status; // ACTIVE, COMPLETED, TRANSFERRED, WITHDRAWN, SUSPENDED</span>
+<span class="nc" id="L28">    private LocalDateTime createdAt;</span>
+<span class="nc" id="L29">    private LocalDateTime updatedAt;</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

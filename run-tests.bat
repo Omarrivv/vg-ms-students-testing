@@ -65,7 +65,17 @@ echo - JaCoCo HTML: target\site\jacoco\index.html
 echo - JaCoCo XML:  target\site\jacoco\jacoco.xml
 echo - Surefire:    target\surefire-reports\
 echo.
-echo Para ejecutar SonarQube (requiere token):
-echo mvn sonar:sonar -Dsonar.token=TU_TOKEN
+
+set /p OPEN_REPORT="¿Deseas abrir el reporte de cobertura? (s/n): "
+if /i "%OPEN_REPORT%"=="s" (
+    echo 🌐 Abriendo reporte JaCoCo...
+    start "" "target\site\jacoco\index.html"
+)
+
+echo.
+echo Comandos adicionales disponibles:
+echo - generate-coverage-report.bat  : Regenerar reporte de cobertura
+echo - open-jacoco-report.bat       : Abrir reporte existente
+echo - run-sonar.bat TU_TOKEN       : Ejecutar analisis SonarQube
 echo.
 pause

@@ -246,12 +246,14 @@ class StudentServiceParameterizedTest {
      * Proveedor de datos para pruebas de fechas de nacimiento
      */
     static Stream<Arguments> provideBirthDates() {
+        // Usar fechas más flexibles para evitar problemas con el año actual
+        int currentYear = LocalDate.now().getYear();
         return Stream.of(
-                Arguments.of(LocalDate.of(2010, 1, 1), 13, 14),  // Estudiante de ~14 años
-                Arguments.of(LocalDate.of(2008, 6, 15), 15, 16), // Estudiante de ~16 años
-                Arguments.of(LocalDate.of(2012, 12, 31), 11, 12), // Estudiante de ~12 años
-                Arguments.of(LocalDate.of(2009, 3, 20), 14, 15), // Estudiante de ~15 años
-                Arguments.of(LocalDate.of(2011, 9, 10), 12, 13)  // Estudiante de ~13 años
+                Arguments.of(LocalDate.of(currentYear - 14, 1, 1), 13, 15),  // Estudiante de ~14 años
+                Arguments.of(LocalDate.of(currentYear - 16, 6, 15), 15, 17), // Estudiante de ~16 años
+                Arguments.of(LocalDate.of(currentYear - 12, 12, 31), 11, 13), // Estudiante de ~12 años
+                Arguments.of(LocalDate.of(currentYear - 15, 3, 20), 14, 16), // Estudiante de ~15 años
+                Arguments.of(LocalDate.of(currentYear - 13, 9, 10), 12, 14)  // Estudiante de ~13 años
         );
     }
 

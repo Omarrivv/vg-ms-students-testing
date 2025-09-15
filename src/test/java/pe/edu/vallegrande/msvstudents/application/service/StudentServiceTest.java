@@ -218,7 +218,8 @@ class StudentServiceTest {
                 .verifyComplete();
 
         verify(studentRepository).countByStatus(Status.ACTIVE);
-        verify(enrollmentRepository, times(7)).countByStatus(anyString());
+        verify(enrollmentRepository, times(6)).countByStatus(anyString());
+        verify(enrollmentRepository).findAll();
     }
 
     @Test

@@ -2,7 +2,7 @@
 Test set: pe.edu.vallegrande.msvstudents.application.service.StudentServiceTest
 -------------------------------------------------------------------------------
 Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.192 s <<< FAILURE! -- in pe.edu.vallegrande.msvstudents.application.service.StudentServiceTest
-pe.edu.vallegrande.msvstudents.application.service.StudentServiceTest.shouldGetEnrollmentStats -- Time elapsed: 0.076 s <<< FAILURE!
+pe.edu.vallegrande.msvstudents.application.service.StudentServiceTest.shouldGetEnrollmentStats -- Time elapsed: 0.065 s <<< FAILURE!
 org.mockito.exceptions.verification.TooFewActualInvocations: 
 
 enrollmentRepository.countByStatus(

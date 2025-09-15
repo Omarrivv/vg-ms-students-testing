@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 11, Errors: 0, Skipped: 0, Time elapsed: 4.236 s <<< FAILURE! -- in pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest
-pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest.shouldReturn404WhenStudentNotFound -- Time elapsed: 0.310 s <<< FAILURE!
+Tests run: 11, Failures: 11, Errors: 0, Skipped: 0, Time elapsed: 4.972 s <<< FAILURE! -- in pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest
+pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest.shouldReturn404WhenStudentNotFound -- Time elapsed: 0.407 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<404 NOT_FOUND> but was:<500 INTERNAL_SERVER_ERROR>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
@@ -81,7 +81,7 @@ java.lang.AssertionError: Status expected:<404 NOT_FOUND> but was:<500 INTERNAL_
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest.shouldFindByGender -- Time elapsed: 0.013 s <<< FAILURE!
+pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest.shouldFindByGender -- Time elapsed: 0.018 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<200 OK> but was:<500 INTERNAL_SERVER_ERROR>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
@@ -160,7 +160,7 @@ java.lang.AssertionError: Status expected:<200 OK> but was:<500 INTERNAL_SERVER_
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest.shouldFindByDocumentNumber -- Time elapsed: 0.012 s <<< FAILURE!
+pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest.shouldFindByDocumentNumber -- Time elapsed: 0.018 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<200 OK> but was:<500 INTERNAL_SERVER_ERROR>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
@@ -239,7 +239,7 @@ java.lang.AssertionError: Status expected:<200 OK> but was:<500 INTERNAL_SERVER_
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest.shouldFindByStatus -- Time elapsed: 0.011 s <<< FAILURE!
+pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest.shouldFindByStatus -- Time elapsed: 0.012 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<200 OK> but was:<500 INTERNAL_SERVER_ERROR>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
@@ -318,7 +318,7 @@ java.lang.AssertionError: Status expected:<200 OK> but was:<500 INTERNAL_SERVER_
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest.shouldReturnAllStudents -- Time elapsed: 0.012 s <<< FAILURE!
+pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest.shouldReturnAllStudents -- Time elapsed: 0.017 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<200 OK> but was:<500 INTERNAL_SERVER_ERROR>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
@@ -476,7 +476,7 @@ java.lang.AssertionError: Status expected:<200 OK> but was:<500 INTERNAL_SERVER_
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest.shouldDeleteStudent -- Time elapsed: 0.011 s <<< FAILURE!
+pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest.shouldDeleteStudent -- Time elapsed: 0.012 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<204 NO_CONTENT> but was:<500 INTERNAL_SERVER_ERROR>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
@@ -555,7 +555,7 @@ java.lang.AssertionError: Status expected:<204 NO_CONTENT> but was:<500 INTERNAL
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest.shouldRestoreStudent -- Time elapsed: 0.009 s <<< FAILURE!
+pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest.shouldRestoreStudent -- Time elapsed: 0.011 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<200 OK> but was:<500 INTERNAL_SERVER_ERROR>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
@@ -634,7 +634,7 @@ java.lang.AssertionError: Status expected:<200 OK> but was:<500 INTERNAL_SERVER_
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest.shouldReturn400WithInvalidData -- Time elapsed: 0.034 s <<< FAILURE!
+pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest.shouldReturn400WithInvalidData -- Time elapsed: 0.042 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<400 BAD_REQUEST> but was:<500 INTERNAL_SERVER_ERROR>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
@@ -713,7 +713,7 @@ java.lang.AssertionError: Status expected:<400 BAD_REQUEST> but was:<500 INTERNA
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest.shouldCreateNewStudent -- Time elapsed: 0.011 s <<< FAILURE!
+pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest.shouldCreateNewStudent -- Time elapsed: 0.012 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<201 CREATED> but was:<500 INTERNAL_SERVER_ERROR>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)

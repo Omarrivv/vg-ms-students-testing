@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest" time="4.236" tests="11" errors="0" skipped="0" failures="11">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest" time="4.972" tests="11" errors="0" skipped="0" failures="11">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\Usuario\AppData\Local\Temp\surefire5717005178670938912\surefirebooter-20250915003109330_3.jar C:\Users\Usuario\AppData\Local\Temp\surefire5717005178670938912 2025-09-15T00-31-09_129-jvmRun1 surefire-20250915003109330_1tmp surefire_0-20250915003109330_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Usuario\AppData\Local\Temp\surefire4288496005125707610\surefirebooter-20250915010144488_3.jar C:\Users\Usuario\AppData\Local\Temp\surefire4288496005125707610 2025-09-15T01-01-44_318-jvmRun1 surefire-20250915010144488_1tmp surefire_0-20250915010144488_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Usuario\Desktop\PruebasUnitariasPruebasCoberturas\backend\target\test-classes;C:\Users\Usuario\Desktop\PruebasUnitariasPruebasCoberturas\backend\target\classes;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-webflux\3.1.1\spring-boot-starter-webflux-3.1.1.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter\3.1.1\spring-boot-starter-3.1.1.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot\3.1.1\spring-boot-3.1.1.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.1.1\spring-boot-autoconfigure-3.1.1.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.1.1\spring-boot-starter-logging-3.1.1.jar;C:\Users\Usuario\.m2\repository\ch\qos\logback\logback-classic\1.4.8\logback-classic-1.4.8.jar;C:\Users\Usuario\.m2\repository\ch\qos\logback\logback-core\1.4.8\logback-core-1.4.8.jar;C:\Users\Usuario\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.20.0\log4j-to-slf4j-2.20.0.jar;C:\Users\Usuario\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\Usuario\.m2\repository\org\slf4j\jul-to-slf4j\2.0.7\jul-to-slf4j-2.0.7.jar;C:\Users\Usuario\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Usuario\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.1.1\spring-boot-starter-json-3.1.1.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.2\jackson-datatype-jdk8-2.15.2.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.2\jackson-datatype-jsr310-2.15.2.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.2\jackson-module-parameter-names-2.15.2.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-reactor-netty\3.1.1\spring-boot-starter-reactor-netty-3.1.1.jar;C:\Users\Usuario\.m2\repository\io\projectreactor\netty\reactor-netty-http\1.1.8\reactor-netty-http-1.1.8.jar;C:\Users\Usuario\.m2\repository\io\netty\netty-codec-http\4.1.94.Final\netty-codec-http-4.1.94.Final.jar;C:\Users\Usuario\.m2\repository\io\netty\netty-common\4.1.94.Final\netty-common-4.1.94.Final.jar;C:\Users\Usuario\.m2\repository\io\netty\netty-buffer\4.1.94.Final\netty-buffer-4.1.94.Final.jar;C:\Users\Usuario\.m2\repository\io\netty\netty-transport\4.1.94.Final\netty-transport-4.1.94.Final.jar;C:\Users\Usuario\.m2\repository\io\netty\netty-codec\4.1.94.Final\netty-codec-4.1.94.Final.jar;C:\Users\Usuario\.m2\repository\io\netty\netty-handler\4.1.94.Final\netty-handler-4.1.94.Final.jar;C:\Users\Usuario\.m2\repository\io\netty\netty-codec-http2\4.1.94.Final\netty-codec-http2-4.1.94.Final.jar;C:\Users\Usuario\.m2\repository\io\netty\netty-resolver-dns\4.1.94.Final\netty-resolver-dns-4.1.94.Final.jar;C:\Users\Usuario\.m2\repository\io\netty\netty-resolver\4.1.94.Final\netty-resolver-4.1.94.Final.jar;C:\Users\Usuario\.m2\repository\io\netty\netty-codec-dns\4.1.94.Final\netty-codec-dns-4.1.94.Final.jar;C:\Users\Usuario\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.94.Final\netty-resolver-dns-native-macos-4.1.94.Final-osx-x86_64.jar;C:\Users\Usuario\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.94.Final\netty-resolver-dns-classes-macos-4.1.94.Final.jar;C:\Users\Usuario\.m2\repository\io\netty\netty-transport-native-epoll\4.1.94.Final\netty-transport-native-epoll-4.1.94.Final-linux-x86_64.jar;C:\Users\Usuario\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.94.Final\netty-transport-native-unix-common-4.1.94.Final.jar;C:\Users\Usuario\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.94.Final\netty-transport-classes-epoll-4.1.94.Final.jar;C:\Users\Usuario\.m2\repository\io\projectreactor\netty\reactor-netty-core\1.1.8\reactor-netty-core-1.1.8.jar;C:\Users\Usuario\.m2\repository\io\netty\netty-handler-proxy\4.1.94.Final\netty-handler-proxy-4.1.94.Final.jar;C:\Users\Usuario\.m2\repository\io\netty\netty-codec-socks\4.1.94.Final\netty-codec-socks-4.1.94.Final.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-web\6.0.10\spring-web-6.0.10.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-beans\6.0.10\spring-beans-6.0.10.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-webflux\6.0.10\spring-webflux-6.0.10.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-data-mongodb-reactive\3.1.1\spring-boot-starter-data-mongodb-reactive-3.1.1.jar;C:\Users\Usuario\.m2\repository\org\mongodb\mongodb-driver-reactivestreams\4.9.1\mongodb-driver-reactivestreams-4.9.1.jar;C:\Users\Usuario\.m2\repository\org\mongodb\bson\4.9.1\bson-4.9.1.jar;C:\Users\Usuario\.m2\repository\org\mongodb\mongodb-driver-core\4.9.1\mongodb-driver-core-4.9.1.jar;C:\Users\Usuario\.m2\repository\org\mongodb\bson-record-codec\4.9.1\bson-record-codec-4.9.1.jar;C:\Users\Usuario\.m2\repository\org\springframework\data\spring-data-mongodb\4.1.1\spring-data-mongodb-4.1.1.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-tx\6.0.10\spring-tx-6.0.10.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-context\6.0.10\spring-context-6.0.10.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-aop\6.0.10\spring-aop-6.0.10.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-expression\6.0.10\spring-expression-6.0.10.jar;C:\Users\Usuario\.m2\repository\org\springframework\data\spring-data-commons\3.1.1\spring-data-commons-3.1.1.jar;C:\Users\Usuario\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\3.1.1\spring-boot-starter-actuator-3.1.1.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\3.1.1\spring-boot-actuator-autoconfigure-3.1.1.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-actuator\3.1.1\spring-boot-actuator-3.1.1.jar;C:\Users\Usuario\.m2\repository\io\micrometer\micrometer-observation\1.11.1\micrometer-observation-1.11.1.jar;C:\Users\Usuario\.m2\repository\io\micrometer\micrometer-commons\1.11.1\micrometer-commons-1.11.1.jar;C:\Users\Usuario\.m2\repository\io\micrometer\micrometer-core\1.11.1\micrometer-core-1.11.1.jar;C:\Users\Usuario\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\Usuario\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.1.1\spring-boot-starter-validation-3.1.1.jar;C:\Users\Usuario\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.10\tomcat-embed-el-10.1.10.jar;C:\Users\Usuario\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.0.Final\hibernate-validator-8.0.0.Final.jar;C:\Users\Usuario\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\Usuario\.m2\repository\org\jboss\logging\jboss-logging\3.5.1.Final\jboss-logging-3.5.1.Final.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Usuario\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\Usuario\.m2\repository\io\projectreactor\reactor-core\3.5.7\reactor-core-3.5.7.jar;C:\Users\Usuario\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.1.1\spring-boot-starter-test-3.1.1.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-test\3.1.1\spring-boot-test-3.1.1.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.1.1\spring-boot-test-autoconfigure-3.1.1.jar;C:\Users\Usuario\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\Usuario\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\Usuario\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\Usuario\.m2\repository\net\minidev\json-smart\2.4.11\json-smart-2.4.11.jar;C:\Users\Usuario\.m2\repository\net\minidev\accessors-smart\2.4.11\accessors-smart-2.4.11.jar;C:\Users\Usuario\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\Usuario\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\Usuario\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\Usuario\.m2\repository\org\mockito\mockito-junit-jupiter\5.3.1\mockito-junit-jupiter-5.3.1.jar;C:\Users\Usuario\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\Usuario\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-core\6.0.10\spring-core-6.0.10.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-jcl\6.0.10\spring-jcl-6.0.10.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-test\6.0.10\spring-test-6.0.10.jar;C:\Users\Usuario\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\Usuario\.m2\repository\io\projectreactor\reactor-test\3.5.7\reactor-test-3.5.7.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\Usuario\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\Usuario\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Usuario\.m2\repository\org\mockito\mockito-core\5.3.1\mockito-core-5.3.1.jar;C:\Users\Usuario\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\Usuario\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.5\byte-buddy-agent-1.14.5.jar;C:\Users\Usuario\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Usuario\.m2\repository\org\testcontainers\junit-jupiter\1.18.3\junit-jupiter-1.18.3.jar;C:\Users\Usuario\.m2\repository\org\testcontainers\testcontainers\1.18.3\testcontainers-1.18.3.jar;C:\Users\Usuario\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Usuario\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\Usuario\.m2\repository\org\apache\commons\commons-compress\1.23.0\commons-compress-1.23.0.jar;C:\Users\Usuario\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\Usuario\.m2\repository\org\jetbrains\annotations\17.0.0\annotations-17.0.0.jar;C:\Users\Usuario\.m2\repository\com\github\docker-java\docker-java-api\3.3.0\docker-java-api-3.3.0.jar;C:\Users\Usuario\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.3.0\docker-java-transport-zerodep-3.3.0.jar;C:\Users\Usuario\.m2\repository\com\github\docker-java\docker-java-transport\3.3.0\docker-java-transport-3.3.0.jar;C:\Users\Usuario\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\Usuario\.m2\repository\org\testcontainers\mongodb\1.18.3\mongodb-1.18.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,12 +33,13 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
-    <property name="surefire.real.class.path" value="C:\Users\Usuario\AppData\Local\Temp\surefire5717005178670938912\surefirebooter-20250915003109330_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Usuario\AppData\Local\Temp\surefire4288496005125707610\surefirebooter-20250915010144488_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.6+8-LTS-188"/>
     <property name="user.name" value="Usuario"/>
     <property name="stdout.encoding" value="UTF-8"/>
+    <property name="sonar" value="true"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -51,7 +52,7 @@
     <property name="user.dir" value="C:\Users\Usuario\Desktop\PruebasUnitariasPruebasCoberturas\backend"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="13784"/>
+    <property name="PID" value="31476"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
@@ -63,7 +64,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="shouldReturn404WhenStudentNotFound" classname="pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest" time="0.31">
+  <testcase name="shouldReturn404WhenStudentNotFound" classname="pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest" time="0.407">
     <failure message="Status expected:&lt;404 NOT_FOUND&gt; but was:&lt;500 INTERNAL_SERVER_ERROR&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<404 NOT_FOUND> but was:<500 INTERNAL_SERVER_ERROR>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
@@ -142,8 +143,8 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
-    <system-out><![CDATA[00:31:15.580 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-00:31:16.013 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration pe.edu.vallegrande.msvstudents.MsvStudentsApplication for test class pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest
+    <system-out><![CDATA[01:01:51.732 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:01:52.094 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration pe.edu.vallegrande.msvstudents.MsvStudentsApplication for test class pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -153,22 +154,22 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.1)
 
-2025-09-15T00:31:17.139-05:00  INFO 13784 --- [           main] p.e.v.m.i.rest.StudentControllerTest     : Starting StudentControllerTest using Java 21.0.6 with PID 13784 (started by Usuario in C:\Users\Usuario\Desktop\PruebasUnitariasPruebasCoberturas\backend)
-2025-09-15T00:31:17.141-05:00 DEBUG 13784 --- [           main] p.e.v.m.i.rest.StudentControllerTest     : Running with Spring Boot v3.1.1, Spring v6.0.10
-2025-09-15T00:31:17.142-05:00  INFO 13784 --- [           main] p.e.v.m.i.rest.StudentControllerTest     : No active profile set, falling back to 1 default profile: "default"
-2025-09-15T00:31:18.482-05:00 DEBUG 13784 --- [           main] s.w.r.r.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
-2025-09-15T00:31:18.715-05:00 DEBUG 13784 --- [           main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 @ExceptionHandler
-2025-09-15T00:31:18.987-05:00 DEBUG 13784 --- [           main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-09-15T00:31:19.027-05:00  INFO 13784 --- [           main] p.e.v.m.i.rest.StudentControllerTest     : Started StudentControllerTest in 2.827 seconds (process running for 9.549)
-2025-09-15T00:31:19.119-05:00 DEBUG 13784 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [708ddfd3] HTTP GET /api/students/non-existent-id
-2025-09-15T00:31:19.172-05:00 DEBUG 13784 --- [     parallel-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [36fe9fbc] HTTP GET "/api/students/non-existent-id"
-2025-09-15T00:31:19.191-05:00 DEBUG 13784 --- [     parallel-1] s.w.r.r.m.a.RequestMappingHandlerAdapter : [36fe9fbc] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
-2025-09-15T00:31:19.265-05:00 DEBUG 13784 --- [     parallel-1] .s.w.r.r.m.a.ResponseEntityResultHandler : [36fe9fbc] Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
-2025-09-15T00:31:19.266-05:00 DEBUG 13784 --- [     parallel-1] .s.w.r.r.m.a.ResponseEntityResultHandler : [36fe9fbc] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
-2025-09-15T00:31:19.283-05:00 DEBUG 13784 --- [     parallel-1] org.springframework.web.HttpLogging      : [36fe9fbc] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
-2025-09-15T00:31:19.317-05:00 DEBUG 13784 --- [     parallel-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [36fe9fbc] Completed 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.325-05:00 DEBUG 13784 --- [     parallel-1] o.s.w.r.f.client.ExchangeFunctions       : [708ddfd3] [167328de] Response 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.347-05:00 ERROR 13784 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+2025-09-15T01:01:53.438-05:00  INFO 31476 --- [           main] p.e.v.m.i.rest.StudentControllerTest     : Starting StudentControllerTest using Java 21.0.6 with PID 31476 (started by Usuario in C:\Users\Usuario\Desktop\PruebasUnitariasPruebasCoberturas\backend)
+2025-09-15T01:01:53.441-05:00 DEBUG 31476 --- [           main] p.e.v.m.i.rest.StudentControllerTest     : Running with Spring Boot v3.1.1, Spring v6.0.10
+2025-09-15T01:01:53.443-05:00  INFO 31476 --- [           main] p.e.v.m.i.rest.StudentControllerTest     : No active profile set, falling back to 1 default profile: "default"
+2025-09-15T01:01:55.051-05:00 DEBUG 31476 --- [           main] s.w.r.r.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
+2025-09-15T01:01:55.397-05:00 DEBUG 31476 --- [           main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 @ExceptionHandler
+2025-09-15T01:01:55.710-05:00 DEBUG 31476 --- [           main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-09-15T01:01:55.751-05:00  INFO 31476 --- [           main] p.e.v.m.i.rest.StudentControllerTest     : Started StudentControllerTest in 3.475 seconds (process running for 11.103)
+2025-09-15T01:01:55.860-05:00 DEBUG 31476 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [1d3aefd] HTTP GET /api/students/non-existent-id
+2025-09-15T01:01:55.934-05:00 DEBUG 31476 --- [     parallel-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [11e09fd5] HTTP GET "/api/students/non-existent-id"
+2025-09-15T01:01:55.959-05:00 DEBUG 31476 --- [     parallel-1] s.w.r.r.m.a.RequestMappingHandlerAdapter : [11e09fd5] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-09-15T01:01:56.042-05:00 DEBUG 31476 --- [     parallel-1] .s.w.r.r.m.a.ResponseEntityResultHandler : [11e09fd5] Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
+2025-09-15T01:01:56.043-05:00 DEBUG 31476 --- [     parallel-1] .s.w.r.r.m.a.ResponseEntityResultHandler : [11e09fd5] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
+2025-09-15T01:01:56.071-05:00 DEBUG 31476 --- [     parallel-1] org.springframework.web.HttpLogging      : [11e09fd5] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
+2025-09-15T01:01:56.113-05:00 DEBUG 31476 --- [     parallel-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [11e09fd5] Completed 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.125-05:00 DEBUG 31476 --- [     parallel-1] o.s.w.r.f.client.ExchangeFunctions       : [1d3aefd] [74041da6] Response 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.163-05:00 ERROR 31476 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
 
 > GET /api/students/non-existent-id
 > WebTestClient-Request-Id: [1]
@@ -178,13 +179,13 @@ No content
 
 < 500 INTERNAL_SERVER_ERROR Internal Server Error
 < Content-Type: [application/json]
-< Content-Length: [130]
+< Content-Length: [129]
 
-{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,0,31,19,198681700]},"data":null}
+{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,1,1,55,968500100]},"data":null}
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldFindByGender" classname="pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest" time="0.013">
+  <testcase name="shouldFindByGender" classname="pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest" time="0.018">
     <failure message="Status expected:&lt;200 OK&gt; but was:&lt;500 INTERNAL_SERVER_ERROR&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200 OK> but was:<500 INTERNAL_SERVER_ERROR>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
@@ -263,15 +264,15 @@ No content
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
-    <system-out><![CDATA[2025-09-15T00:31:19.360-05:00 DEBUG 13784 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [47d8c666] HTTP GET /api/students/gender/MALE
-2025-09-15T00:31:19.361-05:00 DEBUG 13784 --- [     parallel-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [210f6881] HTTP GET "/api/students/gender/MALE"
-2025-09-15T00:31:19.362-05:00 DEBUG 13784 --- [     parallel-2] s.w.r.r.m.a.RequestMappingHandlerAdapter : [210f6881] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
-2025-09-15T00:31:19.364-05:00 DEBUG 13784 --- [     parallel-2] .s.w.r.r.m.a.ResponseEntityResultHandler : [210f6881] Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
-2025-09-15T00:31:19.365-05:00 DEBUG 13784 --- [     parallel-2] .s.w.r.r.m.a.ResponseEntityResultHandler : [210f6881] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
-2025-09-15T00:31:19.366-05:00 DEBUG 13784 --- [     parallel-2] org.springframework.web.HttpLogging      : [210f6881] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
-2025-09-15T00:31:19.367-05:00 DEBUG 13784 --- [     parallel-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [210f6881] Completed 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.367-05:00 DEBUG 13784 --- [     parallel-2] o.s.w.r.f.client.ExchangeFunctions       : [47d8c666] [2fc892d0] Response 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.368-05:00 ERROR 13784 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+    <system-out><![CDATA[2025-09-15T01:01:56.183-05:00 DEBUG 31476 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [4191774f] HTTP GET /api/students/gender/MALE
+2025-09-15T01:01:56.185-05:00 DEBUG 31476 --- [     parallel-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [3c9cd05d] HTTP GET "/api/students/gender/MALE"
+2025-09-15T01:01:56.186-05:00 DEBUG 31476 --- [     parallel-2] s.w.r.r.m.a.RequestMappingHandlerAdapter : [3c9cd05d] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-09-15T01:01:56.188-05:00 DEBUG 31476 --- [     parallel-2] .s.w.r.r.m.a.ResponseEntityResultHandler : [3c9cd05d] Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
+2025-09-15T01:01:56.190-05:00 DEBUG 31476 --- [     parallel-2] .s.w.r.r.m.a.ResponseEntityResultHandler : [3c9cd05d] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
+2025-09-15T01:01:56.191-05:00 DEBUG 31476 --- [     parallel-2] org.springframework.web.HttpLogging      : [3c9cd05d] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
+2025-09-15T01:01:56.192-05:00 DEBUG 31476 --- [     parallel-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [3c9cd05d] Completed 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.193-05:00 DEBUG 31476 --- [     parallel-2] o.s.w.r.f.client.ExchangeFunctions       : [4191774f] [325b39be] Response 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.195-05:00 ERROR 31476 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
 
 > GET /api/students/gender/MALE
 > WebTestClient-Request-Id: [2]
@@ -281,13 +282,13 @@ No content
 
 < 500 INTERNAL_SERVER_ERROR Internal Server Error
 < Content-Type: [application/json]
-< Content-Length: [130]
+< Content-Length: [129]
 
-{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,0,31,19,363898100]},"data":null}
+{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,1,1,56,188361000]},"data":null}
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldFindByDocumentNumber" classname="pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest" time="0.012">
+  <testcase name="shouldFindByDocumentNumber" classname="pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest" time="0.018">
     <failure message="Status expected:&lt;200 OK&gt; but was:&lt;500 INTERNAL_SERVER_ERROR&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200 OK> but was:<500 INTERNAL_SERVER_ERROR>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
@@ -366,15 +367,15 @@ No content
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
-    <system-out><![CDATA[2025-09-15T00:31:19.377-05:00 DEBUG 13784 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [7f3616d2] HTTP GET /api/students/document/12345678
-2025-09-15T00:31:19.379-05:00 DEBUG 13784 --- [     parallel-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [2e2cc2ee] HTTP GET "/api/students/document/12345678"
-2025-09-15T00:31:19.381-05:00 DEBUG 13784 --- [     parallel-3] s.w.r.r.m.a.RequestMappingHandlerAdapter : [2e2cc2ee] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
-2025-09-15T00:31:19.381-05:00 DEBUG 13784 --- [     parallel-3] .s.w.r.r.m.a.ResponseEntityResultHandler : [2e2cc2ee] Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
-2025-09-15T00:31:19.381-05:00 DEBUG 13784 --- [     parallel-3] .s.w.r.r.m.a.ResponseEntityResultHandler : [2e2cc2ee] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
-2025-09-15T00:31:19.382-05:00 DEBUG 13784 --- [     parallel-3] org.springframework.web.HttpLogging      : [2e2cc2ee] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
-2025-09-15T00:31:19.382-05:00 DEBUG 13784 --- [     parallel-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [2e2cc2ee] Completed 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.383-05:00 DEBUG 13784 --- [     parallel-3] o.s.w.r.f.client.ExchangeFunctions       : [7f3616d2] [20eb295b] Response 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.384-05:00 ERROR 13784 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+    <system-out><![CDATA[2025-09-15T01:01:56.207-05:00 DEBUG 31476 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [661ec798] HTTP GET /api/students/document/12345678
+2025-09-15T01:01:56.210-05:00 DEBUG 31476 --- [     parallel-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [3d48bfbc] HTTP GET "/api/students/document/12345678"
+2025-09-15T01:01:56.211-05:00 DEBUG 31476 --- [     parallel-3] s.w.r.r.m.a.RequestMappingHandlerAdapter : [3d48bfbc] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-09-15T01:01:56.212-05:00 DEBUG 31476 --- [     parallel-3] .s.w.r.r.m.a.ResponseEntityResultHandler : [3d48bfbc] Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
+2025-09-15T01:01:56.212-05:00 DEBUG 31476 --- [     parallel-3] .s.w.r.r.m.a.ResponseEntityResultHandler : [3d48bfbc] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
+2025-09-15T01:01:56.213-05:00 DEBUG 31476 --- [     parallel-3] org.springframework.web.HttpLogging      : [3d48bfbc] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
+2025-09-15T01:01:56.213-05:00 DEBUG 31476 --- [     parallel-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [3d48bfbc] Completed 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.214-05:00 DEBUG 31476 --- [     parallel-3] o.s.w.r.f.client.ExchangeFunctions       : [661ec798] [338f5665] Response 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.217-05:00 ERROR 31476 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
 
 > GET /api/students/document/12345678
 > WebTestClient-Request-Id: [3]
@@ -384,13 +385,13 @@ No content
 
 < 500 INTERNAL_SERVER_ERROR Internal Server Error
 < Content-Type: [application/json]
-< Content-Length: [130]
+< Content-Length: [129]
 
-{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,0,31,19,381359200]},"data":null}
+{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,1,1,56,211638600]},"data":null}
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldFindByStatus" classname="pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest" time="0.011">
+  <testcase name="shouldFindByStatus" classname="pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest" time="0.012">
     <failure message="Status expected:&lt;200 OK&gt; but was:&lt;500 INTERNAL_SERVER_ERROR&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200 OK> but was:<500 INTERNAL_SERVER_ERROR>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
@@ -469,15 +470,15 @@ No content
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
-    <system-out><![CDATA[2025-09-15T00:31:19.391-05:00 DEBUG 13784 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [64bcf689] HTTP GET /api/students/status/ACTIVE
-2025-09-15T00:31:19.393-05:00 DEBUG 13784 --- [     parallel-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [2c93ea2] HTTP GET "/api/students/status/ACTIVE"
-2025-09-15T00:31:19.394-05:00 DEBUG 13784 --- [     parallel-4] s.w.r.r.m.a.RequestMappingHandlerAdapter : [2c93ea2] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
-2025-09-15T00:31:19.396-05:00 DEBUG 13784 --- [     parallel-4] .s.w.r.r.m.a.ResponseEntityResultHandler : [2c93ea2] Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
-2025-09-15T00:31:19.396-05:00 DEBUG 13784 --- [     parallel-4] .s.w.r.r.m.a.ResponseEntityResultHandler : [2c93ea2] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
-2025-09-15T00:31:19.397-05:00 DEBUG 13784 --- [     parallel-4] org.springframework.web.HttpLogging      : [2c93ea2] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
-2025-09-15T00:31:19.397-05:00 DEBUG 13784 --- [     parallel-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [2c93ea2] Completed 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.397-05:00 DEBUG 13784 --- [     parallel-4] o.s.w.r.f.client.ExchangeFunctions       : [64bcf689] [c0ed08b] Response 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.398-05:00 ERROR 13784 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+    <system-out><![CDATA[2025-09-15T01:01:56.228-05:00 DEBUG 31476 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [316a682b] HTTP GET /api/students/status/ACTIVE
+2025-09-15T01:01:56.230-05:00 DEBUG 31476 --- [     parallel-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [407ace60] HTTP GET "/api/students/status/ACTIVE"
+2025-09-15T01:01:56.232-05:00 DEBUG 31476 --- [     parallel-4] s.w.r.r.m.a.RequestMappingHandlerAdapter : [407ace60] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-09-15T01:01:56.233-05:00 DEBUG 31476 --- [     parallel-4] .s.w.r.r.m.a.ResponseEntityResultHandler : [407ace60] Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
+2025-09-15T01:01:56.233-05:00 DEBUG 31476 --- [     parallel-4] .s.w.r.r.m.a.ResponseEntityResultHandler : [407ace60] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
+2025-09-15T01:01:56.234-05:00 DEBUG 31476 --- [     parallel-4] org.springframework.web.HttpLogging      : [407ace60] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
+2025-09-15T01:01:56.234-05:00 DEBUG 31476 --- [     parallel-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [407ace60] Completed 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.234-05:00 DEBUG 31476 --- [     parallel-4] o.s.w.r.f.client.ExchangeFunctions       : [316a682b] [4ebd381f] Response 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.235-05:00 ERROR 31476 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
 
 > GET /api/students/status/ACTIVE
 > WebTestClient-Request-Id: [4]
@@ -487,13 +488,13 @@ No content
 
 < 500 INTERNAL_SERVER_ERROR Internal Server Error
 < Content-Type: [application/json]
-< Content-Length: [130]
+< Content-Length: [129]
 
-{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,0,31,19,394553900]},"data":null}
+{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,1,1,56,233055400]},"data":null}
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldReturnAllStudents" classname="pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest" time="0.012">
+  <testcase name="shouldReturnAllStudents" classname="pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest" time="0.017">
     <failure message="Status expected:&lt;200 OK&gt; but was:&lt;500 INTERNAL_SERVER_ERROR&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200 OK> but was:<500 INTERNAL_SERVER_ERROR>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
@@ -572,15 +573,15 @@ No content
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
-    <system-out><![CDATA[2025-09-15T00:31:19.404-05:00 DEBUG 13784 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [4191774f] HTTP GET /api/students
-2025-09-15T00:31:19.405-05:00 DEBUG 13784 --- [     parallel-5] o.s.w.s.adapter.HttpWebHandlerAdapter    : [3133acb9] HTTP GET "/api/students"
-2025-09-15T00:31:19.406-05:00 DEBUG 13784 --- [     parallel-5] s.w.r.r.m.a.RequestMappingHandlerAdapter : [3133acb9] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
-2025-09-15T00:31:19.406-05:00 DEBUG 13784 --- [     parallel-5] .s.w.r.r.m.a.ResponseEntityResultHandler : [3133acb9] Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
-2025-09-15T00:31:19.407-05:00 DEBUG 13784 --- [     parallel-5] .s.w.r.r.m.a.ResponseEntityResultHandler : [3133acb9] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
-2025-09-15T00:31:19.407-05:00 DEBUG 13784 --- [     parallel-5] org.springframework.web.HttpLogging      : [3133acb9] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
-2025-09-15T00:31:19.408-05:00 DEBUG 13784 --- [     parallel-5] o.s.w.s.adapter.HttpWebHandlerAdapter    : [3133acb9] Completed 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.409-05:00 DEBUG 13784 --- [     parallel-5] o.s.w.r.f.client.ExchangeFunctions       : [4191774f] [3ff454ef] Response 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.411-05:00 ERROR 13784 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+    <system-out><![CDATA[2025-09-15T01:01:56.245-05:00 DEBUG 31476 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [134ccb03] HTTP GET /api/students
+2025-09-15T01:01:56.248-05:00 DEBUG 31476 --- [     parallel-5] o.s.w.s.adapter.HttpWebHandlerAdapter    : [6df5790b] HTTP GET "/api/students"
+2025-09-15T01:01:56.251-05:00 DEBUG 31476 --- [     parallel-5] s.w.r.r.m.a.RequestMappingHandlerAdapter : [6df5790b] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-09-15T01:01:56.252-05:00 DEBUG 31476 --- [     parallel-5] .s.w.r.r.m.a.ResponseEntityResultHandler : [6df5790b] Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
+2025-09-15T01:01:56.252-05:00 DEBUG 31476 --- [     parallel-5] .s.w.r.r.m.a.ResponseEntityResultHandler : [6df5790b] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
+2025-09-15T01:01:56.253-05:00 DEBUG 31476 --- [     parallel-5] org.springframework.web.HttpLogging      : [6df5790b] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
+2025-09-15T01:01:56.254-05:00 DEBUG 31476 --- [     parallel-5] o.s.w.s.adapter.HttpWebHandlerAdapter    : [6df5790b] Completed 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.254-05:00 DEBUG 31476 --- [     parallel-5] o.s.w.r.f.client.ExchangeFunctions       : [134ccb03] [63328ac5] Response 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.256-05:00 ERROR 31476 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
 
 > GET /api/students
 > WebTestClient-Request-Id: [5]
@@ -590,9 +591,9 @@ No content
 
 < 500 INTERNAL_SERVER_ERROR Internal Server Error
 < Content-Type: [application/json]
-< Content-Length: [130]
+< Content-Length: [129]
 
-{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,0,31,19,406767600]},"data":null}
+{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,1,1,56,251851700]},"data":null}
 
 ]]></system-out>
   </testcase>
@@ -675,15 +676,15 @@ No content
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
-    <system-out><![CDATA[2025-09-15T00:31:19.419-05:00 DEBUG 13784 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [661ec798] HTTP GET /api/students/test-id
-2025-09-15T00:31:19.420-05:00 DEBUG 13784 --- [     parallel-6] o.s.w.s.adapter.HttpWebHandlerAdapter    : [6fdd3f4a] HTTP GET "/api/students/test-id"
-2025-09-15T00:31:19.421-05:00 DEBUG 13784 --- [     parallel-6] s.w.r.r.m.a.RequestMappingHandlerAdapter : [6fdd3f4a] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
-2025-09-15T00:31:19.421-05:00 DEBUG 13784 --- [     parallel-6] .s.w.r.r.m.a.ResponseEntityResultHandler : [6fdd3f4a] Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
-2025-09-15T00:31:19.421-05:00 DEBUG 13784 --- [     parallel-6] .s.w.r.r.m.a.ResponseEntityResultHandler : [6fdd3f4a] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
-2025-09-15T00:31:19.421-05:00 DEBUG 13784 --- [     parallel-6] org.springframework.web.HttpLogging      : [6fdd3f4a] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
-2025-09-15T00:31:19.423-05:00 DEBUG 13784 --- [     parallel-6] o.s.w.s.adapter.HttpWebHandlerAdapter    : [6fdd3f4a] Completed 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.423-05:00 DEBUG 13784 --- [     parallel-6] o.s.w.r.f.client.ExchangeFunctions       : [661ec798] [611accc1] Response 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.423-05:00 ERROR 13784 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+    <system-out><![CDATA[2025-09-15T01:01:56.265-05:00 DEBUG 31476 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [7072606] HTTP GET /api/students/test-id
+2025-09-15T01:01:56.267-05:00 DEBUG 31476 --- [     parallel-6] o.s.w.s.adapter.HttpWebHandlerAdapter    : [210f6881] HTTP GET "/api/students/test-id"
+2025-09-15T01:01:56.268-05:00 DEBUG 31476 --- [     parallel-6] s.w.r.r.m.a.RequestMappingHandlerAdapter : [210f6881] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-09-15T01:01:56.268-05:00 DEBUG 31476 --- [     parallel-6] .s.w.r.r.m.a.ResponseEntityResultHandler : [210f6881] Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
+2025-09-15T01:01:56.268-05:00 DEBUG 31476 --- [     parallel-6] .s.w.r.r.m.a.ResponseEntityResultHandler : [210f6881] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
+2025-09-15T01:01:56.269-05:00 DEBUG 31476 --- [     parallel-6] org.springframework.web.HttpLogging      : [210f6881] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
+2025-09-15T01:01:56.269-05:00 DEBUG 31476 --- [     parallel-6] o.s.w.s.adapter.HttpWebHandlerAdapter    : [210f6881] Completed 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.270-05:00 DEBUG 31476 --- [     parallel-6] o.s.w.r.f.client.ExchangeFunctions       : [7072606] [2fc892d0] Response 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.270-05:00 ERROR 31476 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
 
 > GET /api/students/test-id
 > WebTestClient-Request-Id: [6]
@@ -693,13 +694,13 @@ No content
 
 < 500 INTERNAL_SERVER_ERROR Internal Server Error
 < Content-Type: [application/json]
-< Content-Length: [130]
+< Content-Length: [129]
 
-{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,0,31,19,421287400]},"data":null}
+{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,1,1,56,268022700]},"data":null}
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldDeleteStudent" classname="pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest" time="0.011">
+  <testcase name="shouldDeleteStudent" classname="pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest" time="0.012">
     <failure message="Status expected:&lt;204 NO_CONTENT&gt; but was:&lt;500 INTERNAL_SERVER_ERROR&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<204 NO_CONTENT> but was:<500 INTERNAL_SERVER_ERROR>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
@@ -778,15 +779,15 @@ No content
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
-    <system-out><![CDATA[2025-09-15T00:31:19.431-05:00 DEBUG 13784 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [316a682b] HTTP DELETE /api/students/test-id
-2025-09-15T00:31:19.433-05:00 DEBUG 13784 --- [     parallel-7] o.s.w.s.adapter.HttpWebHandlerAdapter    : [356480b8] HTTP DELETE "/api/students/test-id"
-2025-09-15T00:31:19.434-05:00 DEBUG 13784 --- [     parallel-7] s.w.r.r.m.a.RequestMappingHandlerAdapter : [356480b8] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
-2025-09-15T00:31:19.435-05:00 DEBUG 13784 --- [     parallel-7] .s.w.r.r.m.a.ResponseEntityResultHandler : [356480b8] Using 'application/json' given [*/*] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
-2025-09-15T00:31:19.435-05:00 DEBUG 13784 --- [     parallel-7] .s.w.r.r.m.a.ResponseEntityResultHandler : [356480b8] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
-2025-09-15T00:31:19.436-05:00 DEBUG 13784 --- [     parallel-7] org.springframework.web.HttpLogging      : [356480b8] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
-2025-09-15T00:31:19.436-05:00 DEBUG 13784 --- [     parallel-7] o.s.w.s.adapter.HttpWebHandlerAdapter    : [356480b8] Completed 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.437-05:00 DEBUG 13784 --- [     parallel-7] o.s.w.r.f.client.ExchangeFunctions       : [316a682b] [3ba37864] Response 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.437-05:00 ERROR 13784 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+    <system-out><![CDATA[2025-09-15T01:01:56.281-05:00 DEBUG 31476 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [2d170dac] HTTP DELETE /api/students/test-id
+2025-09-15T01:01:56.282-05:00 DEBUG 31476 --- [     parallel-7] o.s.w.s.adapter.HttpWebHandlerAdapter    : [2e2cc2ee] HTTP DELETE "/api/students/test-id"
+2025-09-15T01:01:56.284-05:00 DEBUG 31476 --- [     parallel-7] s.w.r.r.m.a.RequestMappingHandlerAdapter : [2e2cc2ee] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-09-15T01:01:56.285-05:00 DEBUG 31476 --- [     parallel-7] .s.w.r.r.m.a.ResponseEntityResultHandler : [2e2cc2ee] Using 'application/json' given [*/*] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
+2025-09-15T01:01:56.285-05:00 DEBUG 31476 --- [     parallel-7] .s.w.r.r.m.a.ResponseEntityResultHandler : [2e2cc2ee] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
+2025-09-15T01:01:56.285-05:00 DEBUG 31476 --- [     parallel-7] org.springframework.web.HttpLogging      : [2e2cc2ee] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
+2025-09-15T01:01:56.286-05:00 DEBUG 31476 --- [     parallel-7] o.s.w.s.adapter.HttpWebHandlerAdapter    : [2e2cc2ee] Completed 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.286-05:00 DEBUG 31476 --- [     parallel-7] o.s.w.r.f.client.ExchangeFunctions       : [2d170dac] [20eb295b] Response 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.288-05:00 ERROR 31476 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
 
 > DELETE /api/students/test-id
 > WebTestClient-Request-Id: [7]
@@ -795,13 +796,13 @@ No content
 
 < 500 INTERNAL_SERVER_ERROR Internal Server Error
 < Content-Type: [application/json]
-< Content-Length: [130]
+< Content-Length: [129]
 
-{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,0,31,19,434914900]},"data":null}
+{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,1,1,56,284091000]},"data":null}
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldRestoreStudent" classname="pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest" time="0.009">
+  <testcase name="shouldRestoreStudent" classname="pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest" time="0.011">
     <failure message="Status expected:&lt;200 OK&gt; but was:&lt;500 INTERNAL_SERVER_ERROR&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200 OK> but was:<500 INTERNAL_SERVER_ERROR>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
@@ -880,15 +881,15 @@ No content
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
-    <system-out><![CDATA[2025-09-15T00:31:19.446-05:00 DEBUG 13784 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [134ccb03] HTTP PUT /api/students/test-id/restore
-2025-09-15T00:31:19.448-05:00 DEBUG 13784 --- [     parallel-8] o.s.w.s.adapter.HttpWebHandlerAdapter    : [66c8a7d3] HTTP PUT "/api/students/test-id/restore"
-2025-09-15T00:31:19.448-05:00 DEBUG 13784 --- [     parallel-8] s.w.r.r.m.a.RequestMappingHandlerAdapter : [66c8a7d3] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
-2025-09-15T00:31:19.449-05:00 DEBUG 13784 --- [     parallel-8] .s.w.r.r.m.a.ResponseEntityResultHandler : [66c8a7d3] Using 'application/json' given [*/*] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
-2025-09-15T00:31:19.449-05:00 DEBUG 13784 --- [     parallel-8] .s.w.r.r.m.a.ResponseEntityResultHandler : [66c8a7d3] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
-2025-09-15T00:31:19.450-05:00 DEBUG 13784 --- [     parallel-8] org.springframework.web.HttpLogging      : [66c8a7d3] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
-2025-09-15T00:31:19.450-05:00 DEBUG 13784 --- [     parallel-8] o.s.w.s.adapter.HttpWebHandlerAdapter    : [66c8a7d3] Completed 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.450-05:00 DEBUG 13784 --- [     parallel-8] o.s.w.r.f.client.ExchangeFunctions       : [134ccb03] [680f457a] Response 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.452-05:00 ERROR 13784 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+    <system-out><![CDATA[2025-09-15T01:01:56.296-05:00 DEBUG 31476 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [2d58136] HTTP PUT /api/students/test-id/restore
+2025-09-15T01:01:56.298-05:00 DEBUG 31476 --- [     parallel-8] o.s.w.s.adapter.HttpWebHandlerAdapter    : [2c93ea2] HTTP PUT "/api/students/test-id/restore"
+2025-09-15T01:01:56.298-05:00 DEBUG 31476 --- [     parallel-8] s.w.r.r.m.a.RequestMappingHandlerAdapter : [2c93ea2] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-09-15T01:01:56.299-05:00 DEBUG 31476 --- [     parallel-8] .s.w.r.r.m.a.ResponseEntityResultHandler : [2c93ea2] Using 'application/json' given [*/*] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
+2025-09-15T01:01:56.299-05:00 DEBUG 31476 --- [     parallel-8] .s.w.r.r.m.a.ResponseEntityResultHandler : [2c93ea2] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
+2025-09-15T01:01:56.299-05:00 DEBUG 31476 --- [     parallel-8] org.springframework.web.HttpLogging      : [2c93ea2] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
+2025-09-15T01:01:56.300-05:00 DEBUG 31476 --- [     parallel-8] o.s.w.s.adapter.HttpWebHandlerAdapter    : [2c93ea2] Completed 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.300-05:00 DEBUG 31476 --- [     parallel-8] o.s.w.r.f.client.ExchangeFunctions       : [2d58136] [c0ed08b] Response 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.302-05:00 ERROR 31476 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
 
 > PUT /api/students/test-id/restore
 > WebTestClient-Request-Id: [8]
@@ -897,13 +898,13 @@ No content
 
 < 500 INTERNAL_SERVER_ERROR Internal Server Error
 < Content-Type: [application/json]
-< Content-Length: [130]
+< Content-Length: [129]
 
-{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,0,31,19,449775200]},"data":null}
+{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,1,1,56,298697600]},"data":null}
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldReturn400WithInvalidData" classname="pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest" time="0.034">
+  <testcase name="shouldReturn400WithInvalidData" classname="pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest" time="0.042">
     <failure message="Status expected:&lt;400 BAD_REQUEST&gt; but was:&lt;500 INTERNAL_SERVER_ERROR&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<400 BAD_REQUEST> but was:<500 INTERNAL_SERVER_ERROR>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
@@ -982,16 +983,16 @@ No content
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
-    <system-out><![CDATA[2025-09-15T00:31:19.462-05:00 DEBUG 13784 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [7266f136] HTTP POST /api/students
-2025-09-15T00:31:19.484-05:00 DEBUG 13784 --- [     parallel-9] org.springframework.web.HttpLogging      : [7266f136] Encoding [CreateStudentRequest(firstName=null, lastName=null, documentType=null, documentNumber=null, birthDat (truncated)...]
-2025-09-15T00:31:19.485-05:00 DEBUG 13784 --- [     parallel-9] o.s.w.s.adapter.HttpWebHandlerAdapter    : [38fd5e4e] HTTP POST "/api/students"
-2025-09-15T00:31:19.485-05:00 DEBUG 13784 --- [     parallel-9] s.w.r.r.m.a.RequestMappingHandlerAdapter : [38fd5e4e] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
-2025-09-15T00:31:19.487-05:00 DEBUG 13784 --- [     parallel-9] .s.w.r.r.m.a.ResponseEntityResultHandler : [38fd5e4e] Using 'application/json' given [*/*] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
-2025-09-15T00:31:19.487-05:00 DEBUG 13784 --- [     parallel-9] .s.w.r.r.m.a.ResponseEntityResultHandler : [38fd5e4e] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
-2025-09-15T00:31:19.487-05:00 DEBUG 13784 --- [     parallel-9] org.springframework.web.HttpLogging      : [38fd5e4e] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
-2025-09-15T00:31:19.488-05:00 DEBUG 13784 --- [     parallel-9] o.s.w.s.adapter.HttpWebHandlerAdapter    : [38fd5e4e] Completed 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.489-05:00 DEBUG 13784 --- [     parallel-9] o.s.w.r.f.client.ExchangeFunctions       : [7266f136] [2d9538bf] Response 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.490-05:00 ERROR 13784 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+    <system-out><![CDATA[2025-09-15T01:01:56.313-05:00 DEBUG 31476 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [29922188] HTTP POST /api/students
+2025-09-15T01:01:56.340-05:00 DEBUG 31476 --- [     parallel-9] org.springframework.web.HttpLogging      : [29922188] Encoding [CreateStudentRequest(firstName=null, lastName=null, documentType=null, documentNumber=null, birthDat (truncated)...]
+2025-09-15T01:01:56.343-05:00 DEBUG 31476 --- [     parallel-9] o.s.w.s.adapter.HttpWebHandlerAdapter    : [64ecbc57] HTTP POST "/api/students"
+2025-09-15T01:01:56.344-05:00 DEBUG 31476 --- [     parallel-9] s.w.r.r.m.a.RequestMappingHandlerAdapter : [64ecbc57] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-09-15T01:01:56.345-05:00 DEBUG 31476 --- [     parallel-9] .s.w.r.r.m.a.ResponseEntityResultHandler : [64ecbc57] Using 'application/json' given [*/*] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
+2025-09-15T01:01:56.345-05:00 DEBUG 31476 --- [     parallel-9] .s.w.r.r.m.a.ResponseEntityResultHandler : [64ecbc57] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
+2025-09-15T01:01:56.346-05:00 DEBUG 31476 --- [     parallel-9] org.springframework.web.HttpLogging      : [64ecbc57] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
+2025-09-15T01:01:56.346-05:00 DEBUG 31476 --- [     parallel-9] o.s.w.s.adapter.HttpWebHandlerAdapter    : [64ecbc57] Completed 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.348-05:00 DEBUG 31476 --- [     parallel-9] o.s.w.r.f.client.ExchangeFunctions       : [29922188] [113613db] Response 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.349-05:00 ERROR 31476 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
 
 > POST /api/students
 > WebTestClient-Request-Id: [9]
@@ -1002,13 +1003,13 @@ No content
 
 < 500 INTERNAL_SERVER_ERROR Internal Server Error
 < Content-Type: [application/json]
-< Content-Length: [130]
+< Content-Length: [129]
 
-{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,0,31,19,486248300]},"data":null}
+{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,1,1,56,345446000]},"data":null}
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldCreateNewStudent" classname="pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest" time="0.011">
+  <testcase name="shouldCreateNewStudent" classname="pe.edu.vallegrande.msvstudents.infrastructure.rest.StudentControllerTest" time="0.012">
     <failure message="Status expected:&lt;201 CREATED&gt; but was:&lt;500 INTERNAL_SERVER_ERROR&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<201 CREATED> but was:<500 INTERNAL_SERVER_ERROR>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
@@ -1087,16 +1088,16 @@ No content
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
-    <system-out><![CDATA[2025-09-15T00:31:19.498-05:00 DEBUG 13784 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [139e291e] HTTP POST /api/students
-2025-09-15T00:31:19.499-05:00 DEBUG 13784 --- [    parallel-10] org.springframework.web.HttpLogging      : [139e291e] Encoding [CreateStudentRequest(firstName=Juan, lastName=Pérez, documentType=DNI, documentNumber=12345678, birt (truncated)...]
-2025-09-15T00:31:19.500-05:00 DEBUG 13784 --- [    parallel-10] o.s.w.s.adapter.HttpWebHandlerAdapter    : [278e3869] HTTP POST "/api/students"
-2025-09-15T00:31:19.502-05:00 DEBUG 13784 --- [    parallel-10] s.w.r.r.m.a.RequestMappingHandlerAdapter : [278e3869] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
-2025-09-15T00:31:19.502-05:00 DEBUG 13784 --- [    parallel-10] .s.w.r.r.m.a.ResponseEntityResultHandler : [278e3869] Using 'application/json' given [*/*] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
-2025-09-15T00:31:19.502-05:00 DEBUG 13784 --- [    parallel-10] .s.w.r.r.m.a.ResponseEntityResultHandler : [278e3869] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
-2025-09-15T00:31:19.503-05:00 DEBUG 13784 --- [    parallel-10] org.springframework.web.HttpLogging      : [278e3869] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
-2025-09-15T00:31:19.503-05:00 DEBUG 13784 --- [    parallel-10] o.s.w.s.adapter.HttpWebHandlerAdapter    : [278e3869] Completed 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.505-05:00 DEBUG 13784 --- [    parallel-10] o.s.w.r.f.client.ExchangeFunctions       : [139e291e] [2949d2e8] Response 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.505-05:00 ERROR 13784 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+    <system-out><![CDATA[2025-09-15T01:01:56.358-05:00 DEBUG 31476 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [6a8fa30a] HTTP POST /api/students
+2025-09-15T01:01:56.360-05:00 DEBUG 31476 --- [    parallel-10] org.springframework.web.HttpLogging      : [6a8fa30a] Encoding [CreateStudentRequest(firstName=Juan, lastName=Pérez, documentType=DNI, documentNumber=12345678, birt (truncated)...]
+2025-09-15T01:01:56.360-05:00 DEBUG 31476 --- [    parallel-10] o.s.w.s.adapter.HttpWebHandlerAdapter    : [7679d3a6] HTTP POST "/api/students"
+2025-09-15T01:01:56.362-05:00 DEBUG 31476 --- [    parallel-10] s.w.r.r.m.a.RequestMappingHandlerAdapter : [7679d3a6] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-09-15T01:01:56.363-05:00 DEBUG 31476 --- [    parallel-10] .s.w.r.r.m.a.ResponseEntityResultHandler : [7679d3a6] Using 'application/json' given [*/*] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
+2025-09-15T01:01:56.363-05:00 DEBUG 31476 --- [    parallel-10] .s.w.r.r.m.a.ResponseEntityResultHandler : [7679d3a6] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
+2025-09-15T01:01:56.364-05:00 DEBUG 31476 --- [    parallel-10] org.springframework.web.HttpLogging      : [7679d3a6] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
+2025-09-15T01:01:56.364-05:00 DEBUG 31476 --- [    parallel-10] o.s.w.s.adapter.HttpWebHandlerAdapter    : [7679d3a6] Completed 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.364-05:00 DEBUG 31476 --- [    parallel-10] o.s.w.r.f.client.ExchangeFunctions       : [6a8fa30a] [78be3319] Response 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.365-05:00 ERROR 31476 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
 
 > POST /api/students
 > WebTestClient-Request-Id: [10]
@@ -1107,9 +1108,9 @@ No content
 
 < 500 INTERNAL_SERVER_ERROR Internal Server Error
 < Content-Type: [application/json]
-< Content-Length: [130]
+< Content-Length: [129]
 
-{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,0,31,19,502957700]},"data":null}
+{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,1,1,56,363009800]},"data":null}
 
 ]]></system-out>
   </testcase>
@@ -1192,15 +1193,15 @@ No content
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
-    <system-out><![CDATA[2025-09-15T00:31:19.512-05:00 DEBUG 13784 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [173a86ad] HTTP GET /api/students/stats/enrollment
-2025-09-15T00:31:19.514-05:00 DEBUG 13784 --- [    parallel-11] o.s.w.s.adapter.HttpWebHandlerAdapter    : [42ceeb70] HTTP GET "/api/students/stats/enrollment"
-2025-09-15T00:31:19.515-05:00 DEBUG 13784 --- [    parallel-11] s.w.r.r.m.a.RequestMappingHandlerAdapter : [42ceeb70] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
-2025-09-15T00:31:19.515-05:00 DEBUG 13784 --- [    parallel-11] .s.w.r.r.m.a.ResponseEntityResultHandler : [42ceeb70] Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
-2025-09-15T00:31:19.515-05:00 DEBUG 13784 --- [    parallel-11] .s.w.r.r.m.a.ResponseEntityResultHandler : [42ceeb70] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
-2025-09-15T00:31:19.515-05:00 DEBUG 13784 --- [    parallel-11] org.springframework.web.HttpLogging      : [42ceeb70] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
-2025-09-15T00:31:19.516-05:00 DEBUG 13784 --- [    parallel-11] o.s.w.s.adapter.HttpWebHandlerAdapter    : [42ceeb70] Completed 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.516-05:00 DEBUG 13784 --- [    parallel-11] o.s.w.r.f.client.ExchangeFunctions       : [173a86ad] [4c091d59] Response 500 INTERNAL_SERVER_ERROR
-2025-09-15T00:31:19.518-05:00 ERROR 13784 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+    <system-out><![CDATA[2025-09-15T01:01:56.371-05:00 DEBUG 31476 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [4a83740e] HTTP GET /api/students/stats/enrollment
+2025-09-15T01:01:56.373-05:00 DEBUG 31476 --- [    parallel-11] o.s.w.s.adapter.HttpWebHandlerAdapter    : [10bf767a] HTTP GET "/api/students/stats/enrollment"
+2025-09-15T01:01:56.374-05:00 DEBUG 31476 --- [    parallel-11] s.w.r.r.m.a.RequestMappingHandlerAdapter : [10bf767a] Using @ExceptionHandler pe.edu.vallegrande.msvstudents.infrastructure.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-09-15T01:01:56.375-05:00 DEBUG 31476 --- [    parallel-11] .s.w.r.r.m.a.ResponseEntityResultHandler : [10bf767a] Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
+2025-09-15T01:01:56.375-05:00 DEBUG 31476 --- [    parallel-11] .s.w.r.r.m.a.ResponseEntityResultHandler : [10bf767a] 0..1 [pe.edu.vallegrande.msvstudents.infrastructure.dto.response.ApiResponse<java.lang.Void>]
+2025-09-15T01:01:56.375-05:00 DEBUG 31476 --- [    parallel-11] org.springframework.web.HttpLogging      : [10bf767a] Encoding [ApiResponse(metadata=ApiResponse.Metadata(status=500, message=Internal server error: 404 NOT_FOUND,  (truncated)...]
+2025-09-15T01:01:56.375-05:00 DEBUG 31476 --- [    parallel-11] o.s.w.s.adapter.HttpWebHandlerAdapter    : [10bf767a] Completed 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.377-05:00 DEBUG 31476 --- [    parallel-11] o.s.w.r.f.client.ExchangeFunctions       : [4a83740e] [1e789a1d] Response 500 INTERNAL_SERVER_ERROR
+2025-09-15T01:01:56.378-05:00 ERROR 31476 --- [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
 
 > GET /api/students/stats/enrollment
 > WebTestClient-Request-Id: [11]
@@ -1210,9 +1211,9 @@ No content
 
 < 500 INTERNAL_SERVER_ERROR Internal Server Error
 < Content-Type: [application/json]
-< Content-Length: [130]
+< Content-Length: [129]
 
-{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,0,31,19,515047700]},"data":null}
+{"metadata":{"status":500,"message":"Internal server error: 404 NOT_FOUND","timestamp":[2025,9,15,1,1,56,374385300]},"data":null}
 
 ]]></system-out>
   </testcase>

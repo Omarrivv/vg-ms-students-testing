@@ -24,9 +24,9 @@
         <maven.compiler.target>17</maven.compiler.target>
         
         <!-- SonarQube Properties -->
-        <sonar.organization>vallegrande</sonar.organization>
+        <sonar.organization>OmarRiv.</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.projectKey>vg-ms-students</sonar.projectKey>
+        <sonar.projectKey>omarrivv</sonar.projectKey>
         <sonar.coverage.jacoco.xmlReportPaths>target/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>

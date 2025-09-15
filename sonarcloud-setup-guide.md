@@ -13,6 +13,7 @@
 ## Paso 2: Configuración del Proyecto
 
 ### Información del Proyecto:
+
 ```
 Organization: tu-usuario-github
 Project Key: tu-usuario-github_vg-ms-students-testing
@@ -20,12 +21,14 @@ Project Name: vg-ms-students-testing
 ```
 
 ### Configuración Automática:
+
 - SonarCloud detectará que es un proyecto Maven
 - Configurará automáticamente el análisis para Java
 
 ## Paso 3: Obtener el Token
 
 ### 3.1 Generar Token Personal:
+
 1. **Clic en tu avatar** (esquina superior derecha)
 2. **My Account** → **Security**
 3. **Generate Token**:
@@ -38,6 +41,7 @@ Project Name: vg-ms-students-testing
 5. **COPIAR EL TOKEN** (solo se muestra una vez)
 
 ### 3.2 Configurar Token en GitHub:
+
 1. **Ir a tu repositorio en GitHub**
 2. **Settings** → **Secrets and variables** → **Actions**
 3. **New repository secret**:
@@ -50,12 +54,14 @@ Project Name: vg-ms-students-testing
 ## Paso 4: Configurar GitHub Actions
 
 El archivo `.github/workflows/ci-cd.yml` ya está configurado para usar:
+
 - `SONAR_TOKEN` como secret
 - Análisis automático en cada push/PR
 
 ## Paso 5: Verificar Configuración
 
 ### En el pom.xml, actualizar:
+
 ```xml
 <properties>
     <sonar.organization>TU-USUARIO-GITHUB</sonar.organization>
@@ -76,16 +82,18 @@ mvn clean verify sonar:sonar -Dsonar.token=TU_TOKEN_AQUI
 ## URLs Importantes
 
 - **SonarCloud Dashboard**: https://sonarcloud.io/projects
-- **Tu Proyecto**: https://sonarcloud.io/project/overview?id=TU-USUARIO-GITHUB_vg-ms-students-testing
-- **GitHub Actions**: https://github.com/TU-USUARIO/vg-ms-students-testing/actions
+- **Tu Proyecto**: https://sonarcloud.io/project/overview?id=Omarrivv_vg-ms-students-testing
+- **GitHub Actions**: https://github.com/Omarrivv/vg-ms-students-testing/actions
 
 ## Métricas que Verás en SonarCloud
 
 ### Quality Gate:
+
 - **Passed/Failed**: Estado general del proyecto
 - **New Code**: Análisis solo del código nuevo
 
 ### Métricas Principales:
+
 - **Bugs**: 0 (objetivo)
 - **Vulnerabilities**: 0 (objetivo)
 - **Code Smells**: ≤ 5 (aceptable)
@@ -93,6 +101,7 @@ mvn clean verify sonar:sonar -Dsonar.token=TU_TOKEN_AQUI
 - **Duplications**: ≤ 3% (recomendado)
 
 ### Tipos de Issues:
+
 - **Blocker**: Errores críticos que deben corregirse
 - **Critical**: Errores importantes
 - **Major**: Problemas de mantenibilidad
@@ -102,14 +111,17 @@ mvn clean verify sonar:sonar -Dsonar.token=TU_TOKEN_AQUI
 ## Solución de Problemas Comunes
 
 ### Error: "Project not found"
+
 - Verificar que el projectKey sea correcto
 - Verificar que el token tenga permisos
 
 ### Error: "Authentication failed"
+
 - Regenerar el token en SonarCloud
 - Actualizar el secret en GitHub
 
 ### Error: "Coverage report not found"
+
 - Verificar que JaCoCo genere el XML: `target/site/jacoco/jacoco.xml`
 - Verificar la propiedad: `sonar.coverage.jacoco.xmlReportPaths`
 
